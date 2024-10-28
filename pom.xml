@@ -1,12 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.3.1</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath />
+		<!--  lookup parent from repository  -->
 	</parent>
 	<groupId>com.facturacion</groupId>
 	<artifactId>daycam</artifactId>
@@ -14,18 +15,18 @@
 	<packaging>war</packaging>
 	<name>daycam</name>
 	<description>Proyecto de facturacion</description>
-	<url/>
+	<url />
 	<licenses>
-		<license/>
+		<license />
 	</licenses>
 	<developers>
-		<developer/>
+		<developer />
 	</developers>
 	<scm>
-		<connection/>
-		<developerConnection/>
-		<tag/>
-		<url/>
+		<connection />
+		<developerConnection />
+		<tag />
+		<url />
 	</scm>
 	<properties>
 		<java.version>21</java.version>
@@ -41,14 +42,13 @@
 			<artifactId>lombok</artifactId>
 			<version>1.18.34</version>
 		</dependency>
-		<!-- Mapeo Relacional -->
+		<!--  Mapeo Relacional  -->
 		<dependency>
 			<groupId>org.modelmapper</groupId>
 			<artifactId>modelmapper</artifactId>
 			<version>3.2.0</version>
 		</dependency>
-
-		<!-- Seguridad de la aplicación -->
+		<!--  Seguridad de la aplicación  -->
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-config</artifactId>
@@ -92,15 +92,13 @@
 			<version>4.0.1</version>
 			<scope>provided</scope>
 		</dependency>
-
-		<!-- Base de datos -->
+		<!--  Base de datos  -->
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-
-		<!---->
+		<!--  -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-tomcat</artifactId>
@@ -111,22 +109,20 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-
-		<!-- Swagger-->
+		<!--  Swagger -->
 		<dependency>
 			<groupId>io.swagger.core.v3</groupId>
 			<artifactId>swagger-annotations</artifactId>
-			<version>2.1.10</version> <!-- Asegúrate de usar la versión adecuada -->
+			<version>2.1.10</version>
+			<!--  Asegúrate de usar la versión adecuada  -->
 		</dependency>
-
-		<!-- Auditoria-->
+		<!--  Auditoria -->
 		<dependency>
 			<groupId>org.hibernate.orm</groupId>
 			<artifactId>hibernate-envers</artifactId>
 			<version>6.6.0.Final</version>
 		</dependency>
- </dependencies>
-
+	</dependencies>
 	<build>
 		<plugins>
 			<plugin>
@@ -135,5 +131,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
